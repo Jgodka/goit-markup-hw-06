@@ -479,6 +479,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label>
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="modal-footer-submit">
+              Subscribe<svg class="modal-footer-svg" width="24" height="24">
+                <use href="./images/sprite-svg.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -488,6 +505,105 @@
             <use href="./images/sprite-svg.svg#modal-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Name</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="[a-zA-Z]+"
+                minlength="2"
+              />
+              <svg
+                class="icon-modal icon-person-black"
+                width="18px"
+                height="18px"
+              >
+                <use
+                  class="icon-modal-svg"
+                  href="./images/sprite-svg.svg#icon-person-black"
+                ></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Phone</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg
+                class="icon-modal icon-phone-black"
+                width="18px"
+                height="24px"
+              >
+                <use
+                  class="icon-modal-svg"
+                  href="./images/sprite-svg.svg#icon-phone-black"
+                ></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Email</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user_email"
+                class="modal-form-input"
+                required
+              />
+              <svg
+                class="icon-modal icon-email-black"
+                width="18px"
+                height="24px"
+              >
+                <use
+                  class="icon-modal-svg"
+                  href="./images/sprite-svg.svg#icon-email-black"
+                ></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Comment</span>
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <div class="modal-checkbox-policy">
+            <label class="modal-checkbox">
+              <input
+                class="modal-form-check"
+                id="user-policy"
+                type="checkbox"
+                name="user_policy"
+              />
+              <span class="icon-modal-checkbox"></span>
+            </label>
+            <label class="modal-form-check-desc" for="user-policy">
+              I accept the terms and conditions of the&nbsp;<a
+                class="user-policy-link"
+                href=""
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button type="submit" class="modal-form-submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
