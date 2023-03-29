@@ -599,6 +599,8 @@ body {
 }
 
 .text-footer {
+  width: 264px;
+  height: 72px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -609,11 +611,11 @@ body {
   padding-bottom: 100px;
 }
 .footer-logo-text {
-  display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  max-width: 264px;
   margin-right: 120px;
+}
+.footer-logo-icon {
 }
 .logo-footer {
   margin-bottom: 18px;
@@ -622,6 +624,7 @@ body {
   display: flex;
 }
 .icon-footer {
+  display: block;
   width: 208px;
   height: 80px;
   justify-content: center;
